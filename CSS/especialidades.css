@@ -1,0 +1,255 @@
+:root {
+    --color-primario: #2c732c;
+    --color-secundario: #1d1c66;
+    --color-tercario: #FFFFFF;
+    --color-texto: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-tercario);
+    color: var(--color-texto);
+}
+
+header {
+    background-color: var(--color-primario);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    background-image: url(../IMAGENES/logo\ insttic.jpg);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.logo-text {
+    color: #1d1c66;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 100px;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.nav-links {
+    color: #FFFFFF
+}
+
+.nav-links a {
+    color: var(--color-tercario);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+
+}
+
+.nav-links a:hover {
+    color: var(--color-secundario);
+}
+
+main {
+    width: 100%;
+    height: 70%;
+    padding: 44px;
+    background: opacity 0.9;
+    background-image: url(../IMAGENES/PRINCIPAL.jpeg);
+    background-size: cover;
+    background-position: center;
+    backgrand-repeat: no-repeat;
+}
+
+.especialidades {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    color: aliceblue;
+    height: 400px;
+
+}
+
+.especialidades-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.especialidad-web {
+    background-image: url(../IMAGENES/descarga\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    box-shadow: 5px 8px 10px rgb(2, 2, 2);
+    border-radius: 10px;
+    width: 300px;
+    color: #fc7208;
+    height: 200px;
+    box-shadow: 5px 8px 10px rgb(2, 2, 2);
+    display: flex;
+    flex-direction: column;
+}
+
+.especialidad-asir {
+    background-image: url(../IMAGENES/images\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #fc7208;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.especialidad-teleco {
+    background-image: url(../IMAGENES/teleco.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 300px;
+    color: #fc7208;
+    height: 200px;
+    box-shadow: 5px 8px 10px rgb(2, 2, 2);
+    display: flex;
+    flex-direction: column;
+}
+
+.especialidades-futuras {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    color: aliceblue;
+    height: 400px;
+
+
+}
+
+.especialidades-futuras-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.especialidad-ciberseguridad {
+    background-image: url(../IMAGENES/ciberseg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    color: #fc7208;
+    flex-direction: column;
+}
+
+.especialidad-ia {
+    background-image: url(../IMAGENES/ia.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    color: #fc7208;
+    flex-direction: column;
+}
+
+.especialidad-datos {
+    background-image: url(../IMAGENES/ccdato\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    color: #fc7208;
+    flex-direction: column;
+}
+
+.especialidad-datos:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.especialidad-ia:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.especialidad-ciberseguridad:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.especialidad-web:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.especialidad-asir:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.especialidad-teleco:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.nota {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #18a39a;
+    font-style: italic;
+
+}
+
+footer {
+    background-color: var(--color-primario);
+    color: var(--color-tercario);
+    text-align: center;
+    padding: 40px;
+    height: 170px;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.footer-contenido {
+
+    justify-content: center;
+    color: black
+}
+
+.footer-contenido2 {
+
+    justify-content: center;
+    color: black
+}
