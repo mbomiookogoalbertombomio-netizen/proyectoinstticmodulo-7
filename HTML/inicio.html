@@ -1,103 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/inicio.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INSTTIC · Inicio</title>
+  <link rel="stylesheet" href="../CSS/inicio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
-
 <body>
-    <header class="header">
-        <span class="span">
-            <a href="span1"><i class="fas fa-bell"></i></a>
-        </span>
-        <div class="logo"></div>
-        <div class="descripcion">INSTTIC</div>
-        <nav class="menu">
-            <a href="#">inicio</a>
-            <a href="#">especialidades</a>
-            <a href="#">sobre nosotros</a>
-            <a href="#">solicitud de admisión</a>
-            <a href="#">solicitud de admisión</a>
-            <a href="#">noticias</a>
-
-        </nav>
-
-        <div class="main"></div>
-
-        <div class="img">
-
-            <div class="clases">
-
-                <div class="clase1">
-                    <i class="fas fa-graduation-cap"></i>
-
-                    <p class="t1">FORMACIÓN ACADÉMICA</p>
-                    <p class="l1">el centro ofrece una formación de calidad orientada al <br>desarrollo de competencias
-                        técnicas y profesionales. <br>Los estudiantes adquieren conocimientos teóricos y prácticos que
-                        les preparan para el mundo laboral</p>
-                </div>
-                <div class="clase2">
-                    <i class="fas fa-microchip"></i>
-                    <p class="t2">INNOVACIÓN Y TECNOLOGÍA</p>
-                    <p class="l2">Contamos con recursos tecnológicos modernos que facilitan <br>el aprendizaje y
-                        fomentan la creatividad, la investigación y el desarrollo de proyecto <br>innovadores</p>
-                </div>
-                <div class="clase3">
-                    <i class="fas fa-user-graduate"></i>
-                    <p class="t3">OPORTUNIDADES PARA ESTUDIANTES</p>
-                    <p class="l3">El instituto impulsa actividades académicas, proyectos, <br>talleres, eventos y
-                        programas que ayudan a los estudiantes a desarrollar sus habilidades <br>y alcanzar sus
-                        objetivos profesionales</p>
-                </div>
+  <header>
+    <div class="logo-cabezera">
+      <div class="icono-logo"></div>
+      <span class="logo-texto">INSTTIC</span>
+    </div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="./inicio.html" class="activo"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="./especilidades.html"><i class="fas fa-graduation-cap"></i> Especialidades</a></li>
+        <li><a href="./sobreNosotros.html"><i class="fas fa-info-circle"></i> Sobre nosotros</a></li>
+        <li><a href="./admision.html"><i class="fas fa-file-alt"></i>Solicitud de  Admisión</a></li>
+        <li><a href="./noticias.html"><i class="fas fa-pen-to-square"></i>Noticias</a></li>
+        <li><a href="./contactanos.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+        <div class="principal">
+        <div class="contenido-hero">
+            <h1>Instituto Superior de Telecomunicaciones y TIC</h1>
+            <p>Formamos el talento digital que impulsa el futuro de Guinea Ecuatorial</p>
+            <a href="./admision.html" class="boton-hero">Solicita tu admisión</a>
+        </div>
+    </div>
+    <section class="estadisticas">
+        <div class="item-estadistica">
+            <i class="fas fa-users"></i>
+            <span class="numero">200+</span>
+            <span class="etiqueta">Estudiantes</span>
+        </div>
+        <div class="item-estadistica">
+            <i class="fas fa-graduation-cap"></i>
+            <span class="numero">3</span>
+            <span class="etiqueta">Especialidades</span>
+        </div>
+        <div class="item-estadistica">
+            <i class="fas fa-trophy"></i>
+            <span class="numero">98%</span>
+            <span class="etiqueta">Inserción laboral</span>
+        </div>
+        <div class="item-estadistica">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <span class="numero">7+</span>
+            <span class="etiqueta">Docentes expertos</span>
+        </div>
+    </section>
+    <section class="sobre-nosotros">
+        <div class="texto-sobre">
+            <h2>Sobre el INSTTIC</h2>
+            <p>El Instituto Superior de Telecomunicaciones, TIC es una institución educativa pública con sede en Djibloho, Ciudad de la Paz. Nuestra misión es formar técnicos especializados en Tecnologías de la Información y la Comunicación para contribuir al desarrollo digital del país.</p>
+            <p>Contamos con un claustro de profesionales altamente cualificados y una infraestructura moderna que facilita el aprendizaje práctico y la innovación.</p>
+            <a href="./sobreNosotros.html" class="boton-secundario">Conoce más</a>
+        </div>
+        <div class="imagen-sobre">
+            <div class="cuadro-decorativo"></div>
+        </div>
+    </section>
+    <section class="especialidades">
+        <h2>Nuestras Especialidades</h2>
+        <div class="grid-especialidades">
+            <div class="tarjeta-especialidad">
+                <i class="fas fa-code"></i>
+                <h3>Desarrollo Web</h3>
+                <p>Formación integral en HTML, CSS, JavaScript, frameworks y bases de datos.</p>
+            </div>
+            <div class="tarjeta-especialidad">
+                <i class="fas fa-network-wired"></i>
+                <h3>Redes y Telecomunicaciones</h3>
+                <p>Diseño, implementación y administración de infraestructuras de red.</p>
+            </div>
+            <div class="tarjeta-especialidad">
+                <i class="fas fa-database"></i>
+                <h3>Inteligencia Artificial</h3>
+                <p>Análisis de datos, machine learning y aplicaciones de inteligencia artificial.</p>
+            </div>
+            <div class="tarjeta-especialidad">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Administracion de sistemas informaticos en Red</h3>
+                <p>Aprende a usar  aplicaciones en Red con tecnologías nativas y multiplataforma.</p>
+            </div>
+            <div class="tarjeta-especialidad">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Ciberseguridad</h3>
+                <p>Protección de sistemas, auditoría y respuesta ante incidentes.</p>
             </div>
         </div>
-        <footer class="footer">
-            <div class="foott">
-                <div class="foot1">
-                    <p class="p0">ENLACES RÁPIDOS</p>
-                    <p class="p">Inicio</p>
-                    <p class="p">Alumnos</p>
-                    <p class="p">Sobre nosotros</p>
-                    <p class="p">Especialidades</p>
-                    <p class="p">Solicitud de admisión</p>
-                    <p class="p"></p>
+        <div class="ver-todas">
+            <a href="./especilidades.html" class="boton-primario">Ver todas las especialidades</a>
+        </div>
+    </section>
+    <section class="noticias-recientes">
+        <h2>Últimas noticias</h2>
+        <div class="grid-noticias">
+            <article class="tarjeta-noticia">
+                <img src="../IMAGENES/ciberseg.jpg" alt="Noticia 1">
+                <div class="cuerpo-noticia">
+                    <span class="categoria">Académico</span>
+                    <h3>Nuevo ciclo formativo en Ciberseguridad</h3>
+                    <p>El INSTTIC lanza un nuevo programa especializado para formar expertos en seguridad informática.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </article>
+            <article class="tarjeta-noticia">
+                <img src="../IMAGENES/hackaton-bata2.jpeg" alt="Noticia 2">
+                <div class="cuerpo-noticia">
+                    <span class="categoria">Evento</span>
+                    <h3>Jornadas de puertas abiertas 2026</h3>
+                    <p>Conoce nuestras instalaciones y conversa con nuestros docentes el próximo 15 de mayo.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </article>
+            <article class="tarjeta-noticia">
+                <img src="../IMAGENES/WhatsApp Image 2026-04-16 at 14.31.26 (1).jpeg" alt="Noticia 3">
+                <div class="cuerpo-noticia">
+                    <span class="categoria">Convocatoria</span>
+                    <h3>Becas para estudiantes destacados</h3>
+                    <p>Abierta la convocatoria de becas al mérito académico para el curso 2026-2027.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </article>
+        </div>
+        <div class="ver-noticias">
+            <a href="./noticias.html" class="boton-secundario">Todas las noticias</a>
+        </div>
+    </section>
+    <section class="cta-preinscripcion">
+        <div class="contenido-cta">
+            <h2>¿Listo para formar parte del INSTTIC?</h2>
+            <p>Completa tu solicitud de admisión en línea y da el primer paso hacia tu futuro profesional.</p>
+            <a href="./admision.html" class="boton-hero">Solicitar admisión</a>
+        </div>
+    </section>
+  </main>
+    <footer class="footer">
+        <div class="columnas-footer">
+            <div class="columna-footer1">
+                <p class="titulo-columna">ENLACES RÁPIDOS</p>
+                <a class="texto-columna" href="./inicio.html">Inicio</a>
+                <a class="texto-columna">Alumnos</a>
+                <a class="texto-columna" href="./sobreNosotros.html">Sobre nosotros</a>
+                <a class="texto-columna" href="./especilidades.html">Especialidades</a>
+                <a class="texto-columna" href="./admision.html">Solicitud de admisión</a>
+                <a class="texto-columna" href="./contactanos.html">Contacto</a>
+            </div>
+            <div class="columna-footer2">
+                <p class="titulo-columna">CONTACTO</p>
+                <p class="texto-columna">Info@insttic.com</p>
+                <p class="texto-columna">+240 555 63 83 94</p>
+                <p class="texto-columna">Oyala, Guinea Ecuatorial</p>
+            </div>
+            <div class="columna-footer3">
+                <p class="titulo-columna">LEGAL</p>
+                <p class="texto-columna">Política de privacidad</p>
+                <p class="texto-columna">Términos y condiciones</p>
+                <p class="texto-columna">Derechos reservados 2026 INSTTIC</p>
+            </div>
+        </div>
+        <div class="redes-footer">
+            <a href="https://www.Instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.Facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.Youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
 
-                </div>
-                <div class="foot2">
-                    <p class="p0">CONTACTO</p>
-                    <p class="p">Info@insttic.com</p>
-                    <p class="p">+240 222 XXX XXX XXX</p>
-                    <p class="p">Oyala, Guinea Ecuatorial</p>
-                </div>
-                <div class="foot3">
-                    <p class="p0">LEGAL</p>
-                    <p class="p">Política de privacidad</p>
-                    <p class="p">Términos y condiciones</p>
-                    <p class="p">Derechos reservados 2026 INSTTIC</p>
-                </div>
-            </div>
-            <div class="icono">
-                <div class="icono1">
-                    <span class="icc">
-                        <a href="https://www.Instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </span>
-                </div>
-                <div class="icono2">
-                    <span class="icc2">
-                        <a href="https://www.Facebook.com/" target="_blank"> <i class="fab fa-facebook"></i></a>
-                    </span>
-                </div>
-                <div class="icono3">
-                    <span class="icc3">
-                        <a href="https://www.Youtube.com/" target="_blank"> <i class="fab fa-youtube"></i></a>
-                    </span>
-                </div>
-            </div>
-        </footer>
 </body>
-
 </html>

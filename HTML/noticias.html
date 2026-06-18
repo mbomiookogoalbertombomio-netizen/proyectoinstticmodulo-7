@@ -1,76 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/noticias.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INSTTIC · Noticias</title>
+  <link rel="stylesheet" href="../CSS/noticias.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-     <header class="header">
-        <span class="span">
-            <a href="span1"><i class="fas fa-bell"></i></a> 
-        </span>
-        <div class="logo"></div>
-        <div class="descripcion">INSTTIC</div>
-        <nav class="menu">
-        <a href="#">inicio</a>
-        <a href="#">especialidades</a>
-        <a href="#">sobre nosotros</a>
-        <a href="#">solicitud de admisión</a>
-        <a href="#">solicitud de admisión</a>
-        <a href="#">noticias</a>
-        </nav>
-    </header>
-    <div class="imagen1"></div>   
-    <div class="imag2">
-        <div class="imagen3"></div>
-        <div class="imagen2"></div>
+  <header>
+    <div class="logo-cabecera">
+      <div class="icono-logo"></div>
+      <span class="logo-texto">INSTTIC</span>
     </div>
-<footer class="footer">
-    <div class="foott">
-    <div class="foot1">
-        <p class="p0">ENLACES RÁPIDOS</p>
-        <p class="p">Inicio</p>
-        <p class="p">Alumnos</p>
-        <p class="p">Sobre nosotros</p>
-        <p class="p">Especialidades</p>
-        <p class="p">Solicitud de admisión</p>
-        <p class="p"></p>      
-        </div>
-        <div class="foot1">
-            <p class="p0">CONTACTO</p>
-            <p class="p">Info@insttic.com</p>
-            <p class="p">+240 222 XXX XXX XXX</p>
-            <p class="p">Oyala, Guinea Ecuatorial</p>
-        </div>
-        <div class="foot1">
-            <p class="p0">LEGAL</p>
-            <p class="p">Política de privacidad</p>
-            <p class="p">Términos y condiciones</p>
-             <p class="p">Derechos reservados 2026 INSTTIC</p>
-        </div>
-        </div>
-        <div class="icono">
-        <div class="icono1">
-            <span class="icc">
-            <a href="https://www.Instagram.com/"target="_blank"><i class="fab fa-instagram"></i></a>
-            </span>
-        </div>
-        <div class="icono2">
-            <span class="icc2">
-            <a href="https://www.Facebook.com/"target="_blank"> <i class="fab fa-facebook"></i></a>
-            </span>
-        </div>
-        <div class="icono3">
-            <span class="icc3">
-            <a href="https://www.Youtube.com/"target="_blank"> <i class="fab fa-youtube"></i></a>
-            </span>
-        </div>
- </div>
-</footer>
-</body>
-</html>
-    
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="./especilidades.html"><i class="fas fa-graduation-cap"></i> Especialidades</a></li>
+        <li><a href="./sobreNosotros.html"><i class="fas fa-info-circle"></i> Sobre nosotros</a></li>
+        <li><a href="./admision.html"><i class="fas fa-file-alt"></i>Solicitud de Admisión</a></li>
+        <li><a href="./noticias.html" class="activo"><i class="fas fa-newspaper"></i> Noticias</a></li>
+        <li><a href="./contactanos.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="noticia-destacada">
+      <div class="destacada-imagen">
+        <img src="../IMAGENES/hackaton-bata1.jpeg" alt="Noticia destacada">
+      </div>
+      <div class="destacada-contenido">
+        <span class="categoria">Evento</span>
+        <h2>Jornadas de Puertas Abiertas 2026</h2>
+        <p class="fecha">15 de mayo de 2026</p>
+        <p>El INSTTIC abre sus puertas a la comunidad para mostrar sus instalaciones, laboratorios y proyectos de los estudiantes. Una oportunidad única para conocer de cerca nuestra oferta educativa.</p>
+        <a href="#" class="boton-leer">Leer más</a>
+      </div>
+    </section>
+    <section class="listado-noticias">
+      <h2>Últimas noticias</h2>
+      <div class="grid-noticias">
+        <article class="tarjeta-noticia">
+          <img src="../IMAGENES/hackaton-auca1.jpeg" alt="Noticia académica">
+          <div class="cuerpo-noticia">
+            <span class="categoria">Académico</span>
+            <h3>Nuevo ciclo formativo en Ciberseguridad</h3>
+            <p class="fecha">10 de junio de 2026</p>
+            <p>El INSTTIC lanza un nuevo programa especializado para formar expertos en seguridad informática, con prácticas en empresas líderes del sector.</p>
+            <a href="./noticias.html">Leer más</a>
+          </div>
+        </article>
+        <article class="tarjeta-noticia">
+          <img src="../IMAGENES/familiar1.jpeg" alt="Convocatoria">
+          <div class="cuerpo-noticia">
+            <span class="categoria">Convocatoria</span>
+            <h3>Becas para estudiantes destacados</h3>
+            <p class="fecha">5 de junio de 2026</p>
+            <p>Abierta la convocatoria de becas al mérito académico para el curso 2026-2027. Plazo de solicitud hasta el 31 de julio.</p>
+            <a href="./admision.html">Leer más</a>
+          </div>
+        </article>
+        <article class="tarjeta-noticia">
+          <img src="../IMAGENES/sala-daw3.jpeg" alt="Innovación">
+          <div class="cuerpo-noticia">
+            <span class="categoria">Innovación</span>
+            <h3>Laboratorio de robótica educativa</h3>
+            <p class="fecha">28 de mayo de 2026</p>
+            <p>Inauguramos un nuevo laboratorio equipado con kits de robótica para fomentar el aprendizaje práctico en programación y electrónica.</p>
+            <a href="./sobreNosotros.html">Leer más</a>
+          </div>
+        </article>
+        <article class="tarjeta-noticia">
+          <img src="../IMAGENES/empresas.jpeg" alt="Institucional">
+          <div class="cuerpo-noticia">
+            <span class="categoria">Institucional</span>
+            <h3>Convenio con empresas tecnológicas</h3>
+            <p class="fecha">20 de mayo de 2026</p>
+            <p>Firmamos acuerdos con Huawei y Conexsia para prácticas profesionales y proyectos de investigación conjuntos.</p>
+            <a href="./sobreNosotros.html">Leer más</a>
+          </div>
+        </article>
+        <article class="tarjeta-noticia">
+          <img src="../IMAGENES/hackaton-bata3.jpeg" alt="Evento">
+          <div class="cuerpo-noticia">
+            <span class="categoria">Evento</span>
+            <h3>Hackathon INSTTIC 2026</h3>
+            <p class="fecha">15 de mayo de 2026</p>
+            <p>Más de 50 estudiantes participaron en la maratón de programación, desarrollando soluciones innovadoras para problemas reales.</p>
+            <a href="#">Leer más</a>
+          </div>
+        </article>
+        <article class="tarjeta-noticia">
+          <img src="../IMAGENES/proyectos.jpeg" alt="Alumnos">
+          <div class="cuerpo-noticia">
+            <span class="categoria">Alumnos</span>
+            <h3>Proyecto final de grado expuesto</h3>
+            <p class="fecha">10 de mayo de 2026</p>
+            <p>Los estudiantes de Desarrollo Web presentaron sus proyectos finales, incluyendo aplicaciones de realidad aumentada y plataformas de e-learning.</p>
+            <a href="./especilidades.html">Leer más</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <aside class="barra-lateral">
+      <div class="categorias">
+        <h3>Categorías</h3>
+        <ul>
+          <li><a href="#">Académico</a></li>
+          <li><a href="#">Evento</a></li>
+          <li><a href="#">Convocatoria</a></li>
+          <li><a href="#">Innovación</a></li>
+          <li><a href="#">Institucional</a></li>
+          <li><a href="#">Alumnos</a></li>
+        </ul>
+      </div>
+      <div class="noticias-populares">
+        <h3>Noticias populares</h3>
+        <ul>
+          <li><a href="#">Becas para estudiantes destacados</a></li>
+          <li><a href="#">Jornadas de Puertas Abiertas 2026</a></li>
+          <li><a href="#">Nuevo ciclo formativo en Ciberseguridad</a></li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <div class="footer-contenido">
+      <div class="footer-seccion">
+        <h3>INSTTIC</h3>
+        <p>Formación profesional de excelencia desde 2017.</p>
+        <p>Comprometidos con el futuro de Guinea Ecuatorial.</p>
+      </div>
+      <div class="footer-seccion">
+        <h3>Contacto</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Avd. La Paz, Djibloho</p>
+        <p><i class="fas fa-phone-alt"></i> +240 555 901 210</p>
+        <p><i class="fas fa-envelope"></i> info@insttic.com</p>
+      </div>
+      <div class="footer-seccion">
+        <h3>Enlaces rápidos</h3>
+        <a href="./inicio.html">Inicio</a>
+        <a href="./especilidades.html">Especialidades</a>
+        <a href="./sobreNosotros.html">Sobre nosotros</a>
+        <a href="./admision.html">Admisión</a>
+        <a href="./noticias.html">Noticias</a>
+        <a href="./contactanos.html">Contacto</a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2026 INSTTIC. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>

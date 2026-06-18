@@ -1,6 +1,308 @@
-:root {
-    --color-primario: rgb(22, 226, 22);
-    --color-secundario: rgb(7, 7, 59);
-    --color-terciario: rgb(255, 255, 255);
-    --color-cuarternario: rgb(240, 6, 6);
+:root{
+    --color-primario:rgb(23, 75, 23);
+    --color-secundario:rgb(7, 7, 59);
+    --color-terciario:rgb(255, 255, 255);
+    --color-cuarternario:rgb(240, 6, 6);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--color-terciario);
+    color: #222;
+    background-image: url(../IMAGENES/WhatsApp\ Image\ 2026-04-16\ at\ 14.31.26.jpeg);
+    background-size: contain;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    background-color: var(--color-primario);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icono{
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-secundario);
+    background-image: url(../IMAGENES/logo\ insttic.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+}
+
+.logo-texto{
+    color: var(--color-terciario);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.menu-toggle{
+    background: none;
+    border: none;
+    color: var(--color-terciario);
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-links li a{
+    color: var(--color-terciario);
+    font-size: 15px;
+    padding: 8px 16px;
+    border-radius: 40px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover{
+    background-color: var(--color-secundario);
+}
+
+.nav-links li a.activo{
+    background-color: var(--color-secundario);
+}
+
+.contacto-section{
+    padding: 40px 20px;
+}
+
+.section-titulo{
+    font-size: 40px;
+    color: var(--color-secundario);
+    text-align: center;
+}
+
+.section-subtitulo{
+    font-size: 22px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.contacto-caja{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contacto-form form{
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contacto-form label{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-secundario);
+    margin: 15px 0 5px;
+}
+
+.contacto-form input,
+.contacto-form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+}
+
+.contacto-form textarea{
+    height: 150px;
+    resize: vertical;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus{
+    border-color: var(--color-primario);
+    outline: none;
+}
+
+.contacto-info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-caja{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.info-caja i{
+    font-size: 40px;
+    color: var(--color-primario);
+    width: 50px;
+    text-align: center;
+}
+
+.info-caja .text{
+    font-size: 18px;
+    color: #333;
+}
+
+.mapa-placeholder{
+    background: #e0e0e0;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #555;
+}
+
+.mapa-placeholder i{
+    font-size: 40px;
+    color: var(--color-primario);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.redes-sociales{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.redes-sociales a{
+    color: var(--color-secundario);
+    font-size: 35px;
+    transition: color 0.3s;
+}
+
+.redes-sociales a:hover{
+    color: var(--color-primario);
+}
+
+.btn{
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    padding: 14px 40px;
+    font-size: 22px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: var(--color-secundario);
+}
+
+footer{
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.footer-conten{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-seccion{
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.footer-seccion h3{
+    font-size: 24px;
+    border-bottom: 2px solid var(--color-terciario);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-seccion p{
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.footer-seccion a{
+    display: block;
+    color: var(--color-terciario);
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.footer-seccion a:hover{
+    text-decoration: underline;
+}
+
+.footer-copy{
+    text-align: center;
+    font-size: 16px;
+    border-top: 1px solid var(--color-terciario);
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 800px){
+    .nav-contenedor{
+        flex-wrap: wrap;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .nav-links{
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        width: 100%;
+    }
+    .nav-links.open{
+        display: flex;
+    }
+    .contacto-caja{
+        grid-template-columns: 1fr;
+    }
 }
