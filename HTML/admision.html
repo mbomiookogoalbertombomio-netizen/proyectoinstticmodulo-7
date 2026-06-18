@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INSTTIC · Solicitud de Admisión</title>
+  <link rel="stylesheet" href="../CSS/solicitud.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <nav>
+    <div class="container nav-content">
+      <a href="./inicio.html" class="logo">
+        <span class="logo-icono">🎓</span>
+        <span class="logo-texto">INSTTIC <span>Profesional</span></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="activo"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="especialidades.html"><i class="fas fa-graduation-cap"></i> Especialidades</a></li>
+        <li><a href="nosotros.html"><i class="fas fa-info-circle"></i> Sobre nosotros</a></li>
+        <li><a href="admision.html"><i class="fas fa-file-alt"></i> Admisión</a></li>
+        <li><a href="solicitud.html"><i class="fas fa-pen-to-square"></i> Solicitud</a></li>
+        <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="solicitud-section">
+    <div class="container">
+      <h2 class="section-title">Solicitud de Admisión</h2>
+      <p class="section-subtitle">Completa tus datos para iniciar el proceso en NextGen Profesional</p>
+      <div id="admision-form">
+        <form id="form-admision" novalidate>
+          <fieldset>
+            <legend>Datos personales</legend>
+            <div class="campo">
+              <label for="nombre-admision">Nombre *</label>
+              <input type="text" id="nombre-admision" name="nombre" placeholder="Ej. Ana" required />
+            </div>
+            <div class="campo">
+              <label for="apellidos-admision">Apellidos *</label>
+              <input type="text" id="apellidos-admision" name="apellidos" placeholder="Ej. Nguema Mba" required />
+            </div>
+            <div class="campo">
+              <label for="email-admision">Correo electrónico *</label>
+              <input type="email" id="email-admision" name="email" placeholder="ana@email.com" required />
+            </div>
+            <div class="campo">
+              <label for="telefono-admision">Teléfono</label>
+              <input type="tel" id="telefono-admision" name="telefono" placeholder="+240 555 123 456" />
+            </div>
+            <div class="campo">
+              <label for="fecha-nacimiento-admision">Fecha de nacimiento *</label>
+              <input type="date" id="fecha-nacimiento-admision" name="fecha-nacimiento" required />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Datos académicos</legend>
+            <div class="campo">
+              <label for="especialidad-admision">Especialidad deseada *</label>
+              <select id="especialidad-admision" name="especialidad" required>
+                <option value="">Selecciona una especialidad</option>
+                <option value="enfermeria">Administracion de sistemas informaticos</option>
+                <option value="banca">Desarrollo de Aplicaciones Web</option>
+                <option value="redes">Telecomunicaciones</option>
+                <option value="relaciones">Ciberseguridad</option>
+                <option value="periodismo">Inteligencia Artificial</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="estudios-admision">Último nivel de estudios *</label>
+              <select id="estudios-admision" name="estudios" required>
+                <option value="">Selecciona una opción</option>
+                <option value="eso">ESO / Graduado Escolar</option>
+                <option value="bachillerato">Bachillerato</option>
+                <option value="fp">Otra FP / Ciclo Formativo</option>
+                <option value="universidad">Universidad</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Documentos adjuntos</legend>
+            <div class="campo">
+              <label for="documento-dni">DNI / Pasaporte (PDF o imagen) *</label>
+              <input type="file" id="documento-dni" name="documento-dni" accept=".pdf,.jpg,.png" required />
+            </div>
+            <div class="campo">
+              <label for="documento-estudios">Certificado de estudios (PDF o imagen) *</label>
+              <input type="file" id="documento-estudios" name="documento-estudios" accept=".pdf,.jpg,.png" required />
+            </div>
+          </fieldset>
+          <div class="admision-acciones">
+            <button type="submit" class="btn btn-grande">Enviar solicitud</button>
+            <p class="admision-nota">* Campos obligatorios</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-seccion">
+          <h3>INSTTIC</h3>
+          <p>Formación profesional de excelencia desde 2017.</p>
+          <p>Comprometidos con el futuro de Guinea Ecuatorial.</p>
+        </div>
+        <div class="footer-seccion">
+          <h3>Contacto</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Avd. La Paz, Djibloho</p>
+          <p><i class="fas fa-phone-alt"></i> +240 555 901 210</p>
+          <p><i class="fas fa-envelope"></i> victorianomanelavila501@gmail.com</p>
+        </div>
+        <div class="footer-seccion">
+          <h3>Enlaces rápidos</h3>
+          <a href="./inicio.html">Inicio</a>
+          <a href="./especialidades.html">Especialidades</a>
+          <a href="./nosotros.html">Sobre nosotros</a>
+          <a href="./admision.html">Admisión</a>
+          <a href="./solicitud.html">Solicitud</a>
+          <a href="./contacto.html">Contacto</a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 INSTTIC V.M.A. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
